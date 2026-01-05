@@ -1,22 +1,15 @@
-# Task: Check the login
+# Task: Last loop value
 
 ### **📝 Task Details**
 
-* **Original Task:** [Check the login](https://javascript.info/logical-operators#check-the-login)
+* **Original Task:** [Last loop value](https://javascript.info/while-for#last-loop-value)
 * **Importance:** 3
 
-Write the code which asks for a login with `prompt`.
+What is the last value alerted by this code? Why?
 
-If the visitor enters `"Admin"`, then `prompt` for a password:
-* If the input is an empty line or `Esc` – show "Canceled".
-* If it’s another string – then show "I don’t know you".
+```javascript
+let i = 3;
 
-The password is checked as follows:
-* If it equals `"TheMaster"`, then show "Welcome!".
-* Another string – show "Wrong password".
-* For an empty string or cancelled input, show "Canceled".
-
-**Constraints:**
-Please use nested `if` blocks. Mind the overall readability of the code.
-
-> **Hint:** Passing an empty input to a prompt returns an empty string `''`. Pressing `Esc` during a prompt returns `null`.
+while (i) {
+  alert( i-- );
+}
